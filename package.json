@@ -1,0 +1,15 @@
+{
+  "name": "gpx-simulator",
+  "version": "1.0.0",
+  "description": "Small GPX simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milo van der Linden",
+  "license": "GPL-3.0+",
+  "dependencies": {
+    "ws": "^4.0.0",
+    "xml2js": "^0.4.19"
+  }
+}
