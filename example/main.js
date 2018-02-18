@@ -15,10 +15,12 @@ function start() {
       var data = JSON.parse(evt.data);
       if (!markers[data.name]) {
         // Add
-        markers[data.name] = L.marker([data.lat, data.lon]).addTo(gj);        
+        markers[data.name] = L.marker([data.lat, data.lon]).addTo(gj);
+        markers[data.name].bindTooltip(data.name);
       } else {
         // Move
         markers[data.name].setLatLng(new L.LatLng(data.lat, data.lon));
+        markers[data.name].setTooltipContent(data.name + " (" + data.speed + " km/h)");
       };
     };
 
