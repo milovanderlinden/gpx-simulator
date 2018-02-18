@@ -9,6 +9,7 @@
   "author": "Milo van der Linden",
   "license": "GPL-3.0+",
   "dependencies": {
+    "moment": "^2.20.1",
     "ws": "^4.0.0",
     "xml2js": "^0.4.19"
   }
